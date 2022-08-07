@@ -1,0 +1,31 @@
+{
+  "name": "lolinck.js",
+  "version": "0.0.1",
+  "description": "A node.js library to interact with lolinck API.",
+  "main": "src/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamLoick/lolinck.js.git"
+  },
+  "keywords": [
+    "lolinck",
+    "api",
+    "link",
+    "malicious link detector",
+    "link checker",
+    "phishing",
+    "malware",
+    "nsfw",
+    "iplogger"
+  ],
+  "author": "LoickTeam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TeamLoick/lolinck.js/issues"
+  },
+  "homepage": "https://github.com/TeamLoick/lolinck.js#readme",
+  "dependencies": {
+    "got": "^12.3.1"
+  }
+}
