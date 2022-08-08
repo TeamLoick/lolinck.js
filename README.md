@@ -26,13 +26,36 @@ npm install lolinck.js
 
 ## Usage
 
+Javascript:
+
 ```js
 const lolinck = require("lolinck.js");
 
 (async () => {
   var res = await lolinck("https://lolinck.com", {
     type: "json, xml or text", // response type
-    cache: false, // select if you want to use cache or not (premium feature)
+    real_time: false, // select if you want to use cache or not (premium feature)
+  });
+  console.log(res); /* {
+    url: "https://lolinck.com",
+    safe: true,
+    NSFW: false,
+    MALWARE: false,
+    PHISHING: false,
+    IP_LOGGING: false,
+  }*/
+})();
+```
+
+Typescript:
+
+```ts
+import lolinck = from 'lolinck.js';
+
+(async () => {
+  var res = await lolinck("https://lolinck.com", {
+    type: "json, xml or text", // response type
+    real_time: false, // select if you want to use cache or not (premium feature)
   });
   console.log(res); /* {
     url: "https://lolinck.com",

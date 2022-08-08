@@ -24,8 +24,18 @@ module.exports = async (
       },
     })
     .json();
+  var safe = false;
+  if (
+    res.NSFW == false &&
+    res.MALWARE == false &&
+    res.PHISHING == false &&
+    res.IP_LOGGING == false
+  ) {
+    safe = true;
+  }
   var formatRes: object = {
     url: res.url,
+    safe: safe,
     nsfw: res.NSFW,
     malware: res.MALWARE,
     phising: res.PHISHING,
