@@ -1,6 +1,6 @@
 {
   "name": "lolinck.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A node.js library to interact with lolinck API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/TeamLoick/lolinck.js/issues"
   },
-  "homepage": "https://github.com/TeamLoick/lolinck.js#readme",
+  "homepage": "https://lolinck.vercel.app",
   "dependencies": {
     "got": "^12.3.1"
   }
