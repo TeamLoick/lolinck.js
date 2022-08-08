@@ -1,6 +1,6 @@
 # lolinck.js
 
-A node.js library to interact with lolinck API.
+A node.js library to interact with lolinck API. If you want to use the API with other languages you can check the [API documentation](https://lolinck.vercel.app/). If you need help [join the discord](https://dsc.gg/loick)
 
 ## Installation
 
