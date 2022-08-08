@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://lolinck.vercel.app/"><img src="https://lolinck.vercel.app/js/banner.png" width="546" alt="lolinck.js" /></a>
+    <a href="https://lolinck.vercel.app/"><img src="https://lolinck.vercel.app/banner.png" width="546" alt="lolinck.js" /></a>
   </p>
   <br />
   <p>
