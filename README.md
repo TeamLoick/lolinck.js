@@ -18,16 +18,10 @@ A node.js library to interact with lolinck API. If you want to use the API with 
 
 We recommend using npm to install lolinck.js:
 
-```
+```bash
 npm install lolinck.js
-```
-
-```
-yarn add lolinck.js
-```
-
-```
-pnpm add lolinck.js
+# yarn add lolinck.js
+# pnpm add lolink.js
 ```
 
 ## Usage
