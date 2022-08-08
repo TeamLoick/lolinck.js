@@ -5,9 +5,9 @@
   </p>
   <br />
   <p>
-    <a href="https://dsc.gg/loick"><img src="https://img.shields.io/discord/822911379924582410?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-    <a href="https://www.npmjs.com/package/lolinck.js"><img src="https://img.shields.io/npm/v/lolinck.js.svg" alt="npm version" /></a>
-    <a href="https://www.npmjs.com/package/lolinck.js"><img src="https://img.shields.io/npm/dt/lolinck.js.svg" alt="npm downloads" /></a>
+    <a href="https://dsc.gg/loick"><img src="https://img.shields.io/discord/822911379924582410?color=5865F2&logo=discord&logoColor=white&style=for-the-badge" alt="Discord server" /></a>
+    <a href="https://www.npmjs.com/package/lolinck.js"><img src="https://img.shields.io/npm/v/lolinck.js.svg?style=for-the-badge" alt="npm version" /></a>
+    <a href="https://www.npmjs.com/package/lolinck.js"><img src="https://img.shields.io/npm/dw/lolinck.js?style=social" alt="npm downloads" /></a>
   </p>
 </div>
 
