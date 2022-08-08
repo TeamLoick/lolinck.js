@@ -1,4 +1,4 @@
-import got from "got";
+const got = require("got");
 const url = "https://api.lolinck.xyz/v1/check/";
 
 module.exports = async (
