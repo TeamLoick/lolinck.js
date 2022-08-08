@@ -2,7 +2,11 @@
   "name": "lolinck.js",
   "version": "0.0.1",
   "description": "A node.js library to interact with lolinck API.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {},
   "repository": {
     "type": "git",
