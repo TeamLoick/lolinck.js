@@ -3,10 +3,10 @@ const url = "https://api.lolinck.xyz/v1/detection";
 
 module.exports = async (
   link: string,
-  options?: { real_time: boolean; type: string }
+  options?: { real_time?: boolean; type?: string }
 ) => {
   var validTypes: Array<String> = ["json"];
-  if (!validTypes.includes(options.type.toLowerCase())) {
+  if (options.type && !validTypes.includes(options.type.toLowerCase())) {
     throw new Error("Invalid type");
   }
   var res: {
