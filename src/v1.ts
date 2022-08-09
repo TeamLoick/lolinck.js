@@ -16,7 +16,7 @@ module.exports = async (
     PHISHING: boolean;
     IP_LOGGING: boolean;
   } = await got
-    .post(url, {
+    .get(url, {
       params: {
         url: link,
         real_time: options.real_time || false,
