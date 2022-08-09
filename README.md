@@ -26,14 +26,14 @@ npm install lolinck.js
 
 ## Usage
 
-Javascript:
+### Javascript:
 
 ```js
 const lolinck = require("lolinck.js");
 
 (async () => {
   var res = await lolinck("https://lolinck.com", {
-    type: "json, xml or text", // response type
+    type: "json", // response type, only json is avalaible for now
     real_time: false, // select if you want to use cache or not (premium feature)
   });
   console.log(res); /* {
@@ -47,14 +47,14 @@ const lolinck = require("lolinck.js");
 })();
 ```
 
-Typescript:
+### Typescript:
 
 ```ts
 import lolinck = from 'lolinck.js';
 
 (async () => {
   var res = await lolinck("https://lolinck.com", {
-    type: "json, xml or text", // response type
+    type: "json,", // response type, only json is avalaible for now
     real_time: false, // select if you want to use cache or not (premium feature)
   });
   console.log(res); /* {
