@@ -1,5 +1,5 @@
 const got = require("got");
-const url = "https://api.lolinck.xyz/v1/check/";
+const url = "https://api.lolinck.xyz/v1/detection";
 module.exports = async (link, options) => {
     var validTypes = ["json"];
     if (!validTypes.includes(options.type.toLowerCase())) {
@@ -7,10 +7,9 @@ module.exports = async (link, options) => {
     }
     var res = await got
         .post(url, {
-        json: {
-            link: link,
+        params: {
+            url: link,
             real_time: options.real_time || false,
-            type: options.type || "json",
         },
     })
         .json();
