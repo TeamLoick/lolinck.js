@@ -38,7 +38,8 @@ const lolinck = require("lolinck.js");
   });
   console.log(res); /* {
     url: "https://lolinck.com",
-    safe: true,
+    MALICIOUS: rfalse,
+    SUSPICIUS: false,
     NSFW: false,
     MALWARE: false,
     PHISHING: false,
@@ -59,7 +60,8 @@ import lolinck = from 'lolinck.js';
   });
   console.log(res); /* {
     url: "https://lolinck.com",
-    safe: true,
+    MALICIOUS: false,
+    SUSPICIUS: false,
     NSFW: false,
     MALWARE: false,
     PHISHING: false,

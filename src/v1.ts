@@ -11,6 +11,8 @@ module.exports = async (
   }
   var res: {
     url: string;
+    MALICIOUS: boolean;
+    SUSPICIUS: boolean;
     NSFW: boolean;
     MALWARE: boolean;
     PHISHING: boolean;
@@ -23,22 +25,15 @@ module.exports = async (
       },
     })
     .json();
-  var safe = false;
-  if (
-    res.NSFW == false &&
-    res.MALWARE == false &&
-    res.PHISHING == false &&
-    res.IP_LOGGING == false
-  ) {
-    safe = true;
-  }
+
   var formatRes: object = {
     url: res.url,
-    safe: safe,
-    nsfw: res.NSFW,
-    malware: res.MALWARE,
-    phising: res.PHISHING,
-    ip_logging: res.IP_LOGGING,
+    MALICIOUS: res.MALICIOUS,
+    SUSPICIUS: res.SUSPICIUS,
+    NSFW: res.NSFW,
+    MALWARE: res.MALWARE,
+    PHISHING: res.PHISHING,
+    IP_LOGGING: res.IP_LOGGING,
   };
 
   return formatRes;
