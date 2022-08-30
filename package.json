@@ -1,13 +1,15 @@
 {
   "name": "lolinck.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A node.js library to interact with lolinck API.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "deploy": "tsc && npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TeamLoick/lolinck.js.git"

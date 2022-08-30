@@ -21,24 +21,25 @@ We recommend using npm to install lolinck.js:
 ```bash
 npm install lolinck.js
 # yarn add lolinck.js
-# pnpm add lolink.js
+# pnpm add lolinck.js
 ```
 
 ## Usage
 
-Javascript:
+### CommonJs:
 
 ```js
 const lolinck = require("lolinck.js");
 
 (async () => {
   var res = await lolinck("https://lolinck.com", {
-    type: "json, xml or text", // response type
+    type: "json", // response type, only json is avalaible for now
     real_time: false, // select if you want to use cache or not (premium feature)
   });
   console.log(res); /* {
     url: "https://lolinck.com",
-    safe: true,
+    MALICIOUS: false,
+    SUSPICIUS: false,
     NSFW: false,
     MALWARE: false,
     PHISHING: false,
@@ -47,19 +48,20 @@ const lolinck = require("lolinck.js");
 })();
 ```
 
-Typescript:
+### ESmodules:
 
 ```ts
-import lolinck = from 'lolinck.js';
+import lolinck from 'lolinck.js';
 
 (async () => {
   var res = await lolinck("https://lolinck.com", {
-    type: "json, xml or text", // response type
+    type: "json", // response type, only json is avalaible for now
     real_time: false, // select if you want to use cache or not (premium feature)
   });
   console.log(res); /* {
     url: "https://lolinck.com",
-    safe: true,
+    MALICIOUS: false,
+    SUSPICIUS: false,
     NSFW: false,
     MALWARE: false,
     PHISHING: false,
