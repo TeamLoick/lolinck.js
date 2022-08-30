@@ -1,10 +1,12 @@
 const got = require("got");
 const url = "https://api.lolinck.xyz/v1/detection";
+import { tldExists } from "tldjs";
 
 module.exports = async (
   link: string,
   options?: { real_time?: boolean; type?: string }
 ) => {
+  if (!tldExists(link)) throw new Error("Invalid link");
   var validTypes: Array<String> = ["json"];
   if (options.type && !validTypes.includes(options.type.toLowerCase())) {
     throw new Error("Invalid type");

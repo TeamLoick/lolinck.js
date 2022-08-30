@@ -1,6 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const got = require("got");
 const url = "https://api.lolinck.xyz/v1/detection";
+const tldjs_1 = require("tldjs");
 module.exports = async (link, options) => {
+    if (!(0, tldjs_1.tldExists)(link))
+        throw new Error("Invalid link");
     var validTypes = ["json"];
     if (options.type && !validTypes.includes(options.type.toLowerCase())) {
         throw new Error("Invalid type");
