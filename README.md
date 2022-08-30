@@ -21,12 +21,12 @@ We recommend using npm to install lolinck.js:
 ```bash
 npm install lolinck.js
 # yarn add lolinck.js
-# pnpm add lolink.js
+# pnpm add lolinck.js
 ```
 
 ## Usage
 
-### Javascript:
+### CommonJs:
 
 ```js
 const lolinck = require("lolinck.js");
@@ -38,7 +38,7 @@ const lolinck = require("lolinck.js");
   });
   console.log(res); /* {
     url: "https://lolinck.com",
-    MALICIOUS: rfalse,
+    MALICIOUS: false,
     SUSPICIUS: false,
     NSFW: false,
     MALWARE: false,
@@ -48,7 +48,7 @@ const lolinck = require("lolinck.js");
 })();
 ```
 
-### Typescript:
+### ESmodules:
 
 ```ts
 import lolinck from 'lolinck.js';
